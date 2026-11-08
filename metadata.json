@@ -1,0 +1,10 @@
+{
+  "name": "Remix ASL SignLens - Realtime ASL AI \u0026 Gemini Pipeline",
+  "description": "Minimalist high-contrast ASL sign recognition pipeline with invariant geometric classification, debounce buffer, Gemini Flash sentence builder, and TTS.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASL Recognition - Realtime American Sign Language Pipeline</title>
+    <meta name="description" content="Minimalist high-contrast American Sign Language (ASL) recognition pipeline with invariant geometric classification, debounce buffer, sentence builder, and TTS." />
+    <meta property="og:title" content="ASL Recognition - Realtime American Sign Language Pipeline" />
+    <meta property="og:description" content="Minimalist high-contrast American Sign Language (ASL) recognition pipeline with invariant geometric classification, debounce buffer, sentence builder, and TTS." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      // Prevent third-party libraries (e.g. MediaPipe CameraUtils) from triggering window.alert dialogs
+      window.alert = function(msg) {
+        console.warn('[CameraUtils Notice]:', msg);
+      };
+    </script>
+    <!-- MediaPipe Hands & Camera Utils CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
