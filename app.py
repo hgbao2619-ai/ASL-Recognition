@@ -1116,8 +1116,12 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 
-    mp_hands = mp.solutions.hands
-    mp_drawing = mp.solutions.drawing_utils
+    try:
+        mp_hands = mp.solutions.hands
+        mp_drawing = mp.solutions.drawing_utils
+    except AttributeError:
+        import mediapipe.python.solutions.hands as mp_hands
+        import mediapipe.python.solutions.drawing_utils as mp_drawing
 
     hand_connection_style = mp_drawing.DrawingSpec(color=(255, 240, 0), thickness=2, circle_radius=2)
     hand_landmark_style = mp_drawing.DrawingSpec(color=(255, 255, 255), thickness=1, circle_radius=3)
