@@ -180,8 +180,11 @@ To stop the server at any time: Return to the Command Prompt window and press **
 
 If you prefer running via Python rather than the web browser:
 
-1. Install Python 3.9 or higher from: https://www.python.org/ (Check the box "Add Python to PATH" during installation).
-2. In your project directory, open Command Prompt and install dependencies:
+1. **Install Python**: Install **Python 3.9, 3.10, 3.11, or 3.12** from: https://www.python.org/
+**Important**: Check the box **"Add Python to PATH"** during installation.
+**Notice**: Do **NOT** use Python 3.13 or newer, as Google MediaPipe does not yet support Python 3.13+.
+
+3. In your project directory, open Command Prompt and install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -227,7 +230,7 @@ If you wish to enable full generative sentence reconstruction for arbitrary lett
 
 1. Visit Google AI Studio at: https://aistudio.google.com/apikey
 2. Sign in with your Google account and click **Create API key**.
-3. Copy the generated key string (starting with `AIzaSy...`).
+3. Copy the generated key string.
 4. In the root project folder (`asl-project`), create a file named `.env`.
 5. Open `.env` in Notepad and add the following line:
 
